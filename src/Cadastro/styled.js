@@ -35,11 +35,22 @@ export const FormCadastro = styled.form`
 
         h1 {
             font-size: 40px;
-            font-weight: 400;
+            font-weight: bold;
+        }
+
+        .div-icon {
+            display: flex;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            margin: 2rem;
+
+            img {
+                width: 100%;
+            }
         }
 
         .inputs-div{
-            margin-top: 5rem;
     
             input {
                 margin-bottom: 25px;
