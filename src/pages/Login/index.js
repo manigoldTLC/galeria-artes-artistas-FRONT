@@ -1,9 +1,9 @@
 import { Container, StyleImagemCadastro, FormCadastro } from '../Cadastro/styled';
 import { Span, ContainerSpan } from './styled'
-import Input from '../components/Input';
-import Button from '../components/Button';
-import imgLogin from '../assets/images/image-form2.png';
-import icon2 from '../assets/images/icon2.png';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
+import imgLogin from '../../assets/images/image-form2.png';
+import icon2 from '../../assets/images/icon2.png';
 
 const PaginaLogin = () => {
     return (
