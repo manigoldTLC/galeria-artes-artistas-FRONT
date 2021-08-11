@@ -8,4 +8,10 @@ export const StyleTitle = styled.title`
     font-size: 40px;
     font-weight: bold;
     color: #000;
+
+    span {
+        margin-top: 10px;
+        font-size: 22px;
+        font-weight: normal;
+    }
 `

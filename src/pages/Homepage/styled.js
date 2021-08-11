@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const FirstContainer = styled.section`
     display: flex;
     width: 100%;
     height: 100vh;
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 
     .div-wrapper-text {
         .texto {
@@ -23,5 +23,35 @@ export const Container = styled.section`
             }
         }
     };
+
+`
+export const SecondContainer = styled.section`
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 5% 10% 0 10%;
+
+    img-wrapper {
+        max-width: 40%;
+        justify-content: center;
+        margin: right;
+    };
+
+    content-wrapper {
+        max-width 40%;
+        justify-content: right;
+        margin: left;
+
+        p {
+            line-height: 10px;
+            font-size: 24px;
+        };
+    }
+
+`
+
+export const VerticalLine = styled.span`
+    display: flex;
+    border: 50px 50px solid black;
 
 `
