@@ -6,23 +6,6 @@ export const FirstContainer = styled.section`
     height: 100vh;
     padding: 10% 10% 0 10%;
 
-    .div-wrapper-text {
-        .texto {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            color: #000;
-    
-            h1 {
-                font-size: 24px;
-                justify-content: left;
-            }
-    
-            p {
-                font-size: 16px
-            }
-        }
-    };
 
 `
 export const SecondContainer = styled.section`
@@ -30,28 +13,72 @@ export const SecondContainer = styled.section`
     width: 100%;
     height: 100vh;
     padding: 5% 10% 0 10%;
+    align-items: center;
 
-    img-wrapper {
-        max-width: 40%;
-        justify-content: center;
-        margin: right;
+    .img-wrapper {
+        width: 40vw;
+        border-right: 1px solid black;
+
+        img {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            max-width: 80%
+        }
     };
 
-    content-wrapper {
+    .content-wrapper {
         max-width 40%;
-        justify-content: right;
-        margin: left;
+        margin-left: auto;
+        text-align: right;
+        border-left: 2px solid black;
 
         p {
-            line-height: 10px;
-            font-size: 24px;
+            margin-top: 3%;
+            line-height: 2.2rem;
+            font-size: 1.4rem;
         };
     }
 
 `
 
-export const VerticalLine = styled.span`
+export const ThirdContainer = styled.section`
     display: flex;
-    border: 50px 50px solid black;
+    width: 100%;
+    height: 100vh;
+    padding: 5% 10% 0 10%;
+    align-items: center;
+
+    .img-wrapper {
+        text-align: right;
+        width: 30vw;
+
+        img {
+            margin-left: 27%;
+            margin-right: 0;
+            max-width: 100%;
+        }
+    };
+
+    .content-wrapper {
+        width: 40vw;
+        text-align: left;
+        justify-content: center;
+        border-right: 1px solid black;
+        padding-top: 20%;
+        padding-bottom: 20%;
+
+        .text-wrapper {
+            border-right: 2px solid black;
+            width: 80%;
+        }
+
+        p {
+            margin-right: 0;
+            margin-top: 3%;
+            max-width: 80%;
+            line-height: 2.2rem;
+            font-size: 1.4rem;
+        };
+    }
 
 `

@@ -5,13 +5,13 @@ export const StyleTitle = styled.title`
     flex-direction: column;
     align-items: left;
     width: 100%;
-    font-size: 40px;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #000;
 
     span {
         margin-top: 10px;
-        font-size: 22px;
+        font-size: 1.4rem;
         font-weight: normal;
     }
 `
