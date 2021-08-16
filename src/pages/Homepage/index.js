@@ -1,7 +1,7 @@
 import { FirstContainer, SecondContainer, ThirdContainer} from './styled';
+import HomepageCarousel from '../../components/Carousel'
 import Title from '../../components/Title'
 import imgAnjos from '../../assets/images/anjos-homepage.png'
-import imgRegister from '../../assets/images/image-form1.png';
 import imgAbstract from '../../assets/images/abstract-homepage.jpg'
 import { BiChevronDownCircle } from 'react-icons/bi'
 
@@ -9,9 +9,12 @@ const Homepage = () => {
     return (
         <>
         <FirstContainer>
-            <Title>Galeria MC de Arte Universal
-                <span>Arraste e saiba mais. <BiChevronDownCircle></BiChevronDownCircle></span>
-            </Title>
+            <div className='text-wrapper'>
+                <Title>Galeria MC de Arte Universal
+                    <span>Arraste e saiba mais. <BiChevronDownCircle></BiChevronDownCircle></span>
+                </Title>
+            </div>
+            <HomepageCarousel/>
         </FirstContainer>
 
         <SecondContainer>
