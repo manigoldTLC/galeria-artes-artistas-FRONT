@@ -25,6 +25,7 @@ export const Navbar = () => {
                 </a>
             </div>
             <div className='middle'>
+                <Link to='/paintings'>Pinturas</Link>
                 <Link to="/" className="li-nav">Home</Link>
                 <Link to="/artistas" className="li-nav">Artistas</Link>
                 <a className="li-nav" href='/'>Sobre Nós</a>
@@ -48,15 +49,15 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoIosPaper />
-                                <span>Categorias</span>
+                            <a href='/login'>
+                                <IoIcons.IoMdPeople />
+                                <span>Login</span>
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoMdPeople />
-                                <span>Publishers</span>
+                            <a href='/pinturas'>
+                                <IoIcons.IoIosPaper />
+                                <span>Pinturas</span>
                             </a>
                         </li>
                     </ul>

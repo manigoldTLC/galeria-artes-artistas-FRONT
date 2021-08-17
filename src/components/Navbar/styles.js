@@ -75,7 +75,8 @@ export const Container = styled.nav`
         top: 0;
         right: -100%;
         transition: 850ms;
-        opacity: 70%;
+        opacity: 80%;
+        z-index:1;
     }
     .nav-menu.active {
         right: 0;
