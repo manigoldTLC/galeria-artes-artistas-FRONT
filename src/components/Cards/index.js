@@ -1,9 +1,27 @@
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import {api} from '../../services/api'
 
 import { Container } from './styled';
 import artista1 from '../../assets/images/image 2.png'
 
 const Card = () => {
+
+    const [artista, setArtista] = useState([])
+
+    const loadArtista = async () => {
+
+        const response = await api.get('/artists/index_artists', {
+            
+        })
+        console.log(response.data)
+        setArtista(response.data);
+    }
+
+    useEffect(() => {
+        loadArtista();
+    }, [])
+
     return (
         <Container>
             <div className="div-card">
