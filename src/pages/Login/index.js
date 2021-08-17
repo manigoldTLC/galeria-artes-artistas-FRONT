@@ -1,4 +1,4 @@
-import { Container, StyleImagemCadastro, FormCadastro } from '../Cadastro/styled';
+import { Container, StyleImagemCadastro } from '../Cadastro/styled';
 import { Span, ContainerSpan } from './styled'
 import Input from '../../components/Input';
 import Button from '../../components/Button';

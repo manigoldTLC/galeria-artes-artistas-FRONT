@@ -23,6 +23,7 @@ const MyRoutes = () => {
             <Route exact path= '/login' component={PaginaLogin}/>
             <Route exact path= '/signup' component={PaginaCadastro}/>
             <Route exact path='/artistas' component={ArtistsPage}/>
+            <Route exact path='/artistas/artista' component={ShowArtist}/>
         </Switch>
     )
 }
