@@ -1,57 +1,88 @@
 import styled from 'styled-components';
 
-export const Container = styled.footer`
+export const ContainerFooter = styled.footer`
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
 
-footer {
-    
-   display:flex;
-   justify-content: space-between ;
-   position:sticky;
-   bottom:0;
-   width:100%;
-   height:80px;   /* Height of the footer */
-   background:#6cf;
-   font-size: 0.6rem;
-   font-family: robotto;
-  
-  }
-  .left-footer{
-        display:flex;
-        justify-content: space-between;
-        margin-left: 1rem;
-        font-size: 0.6rem;
-  }
-  .left-footer h1{
-      margin-left: 3.7rem;
-      margin-top: 1.3rem;
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
 
-  }
-  .left-footer h2{
-      margin-left: 5rem;
-      margin-top: 2.5rem;
+        h3 {
+           font-size: 1.8rem;
+           font-weight: 400;
+           text-transform: capitalize;
+           line-height: 3rem;
+       }
 
-  }
-  .right-footer{
-        display:flex;
-        justify-content: space-between;
-        margin-right: 1rem;
-        font-size: 0.6rem;
-  }
-  .right-footer h3{
-      margin-top: 2.5rem;
-      margin-right: 5rem;
-      font-size: 1.2rem;
-      font-style: italic;
-      text-decoration: whitesmoke;
-      text-decoration:underline;
-  }
-  .right-footer h4{
-      font-size: 1.2rem;
-      margin-right: 3.7rem;
-      margin-top: 1.3rem;
-  }
-  img {
-      margin-top: 1rem;
-      height:3.6rem;  
-  }
-  `;
+        p {
+           max-width: 500px;
+           margin: 10px auto;
+           line-height: 28px;
+           font-size: 14px;
+       }
+       
+       .div-images-us {
+           width: 100%;
+           display: flex;
+           padding: 3rem 5rem;
+           gap: 2rem;
+           
+            .div-image-me {
+                background-color: #fff;
+                width: 30vw;
+                height: 48vh;
+                cursor: pointer;
+                padding-bottom: 3.2rem;
+                border-radius: 5px;
+                
+                img {
+                    width: 100%;
+                    height: 100% !important;
+                    object-fit: cover;
+                    object-position: center 20%;
+                    border-radius: 5px;
+                }
+
+                p {
+                    color: black;
+                    font-size: 1.2em;
+                    font-weight: bold;
+
+                }
+            }
+
+
+       }
+    }
+
+    .footer-bottom {
+        background: #000;
+        width: 100vw;
+        padding: 20px 0;
+        text-align: center;
+
+        p {
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+
+        span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+    }
+
+`;
