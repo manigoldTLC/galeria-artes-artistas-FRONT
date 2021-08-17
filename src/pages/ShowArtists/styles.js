@@ -1,31 +1,48 @@
 import styled from 'styled-components';
-import img1 from '../../assets/images/rick.jpg';
-export const Container = styled.div`
-    .background {
+
+export const Container = styled.section`
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    
+    .imagem-artista {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-    }
-        .text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 30rem;
-            margin-top: 0.9rem;
-            font-size: 0.9rem ;
-            text-align: justify;
+        width: 100vw;
+        
+        img {
+            border-radius: 5px;
+            object-fit: cover;
+            width: 100% !important;
             
         }
-            h1{
-                font-size: 2rem;
-                text-align: center;
-                font-style: italic;
+    }
+
+    .descricao-artista {
+        display: flex;
+        flex-direction: column;
+        padding: 0 3rem;
+        justify-content: center;
+
+        h1 {
+            padding-bottom: 1.2rem;
+        }
+    }
+
+    @media (max-width: 905px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-left: 0;
+        padding-right: 0;
+
+        .descricao-artista {
+            margin-top: 1.5rem;
+
+            p {
+                text-align: justify;
             }
-            img{
-            
-                margin-top: 10%;
-                height: 30rem;
-                width: 30rem;
-            }
-    `;
+        }
+    }
+`;

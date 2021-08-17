@@ -7,17 +7,47 @@ export const Container = styled.nav`
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+
+    @media (max-width: 492px) {
+        .middle {
+            gap: 1rem !important;
+        }
+
+        
+    }
+
     
     .middle {
         display: flex;
+        justify-content: space-around;
         gap: 3rem;
-        justify-content: space-between;
+
+
+        .li-nav {
+            position: relative;
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            padding: 10px;
+
+            :after {
+                content: "";
+                position: absolute;
+                background-color: #1E2535;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+
+            :hover:after {
+                width: 100%;
+            }
+        }
+
     }
-    .middle a {
-        text-decoration: none;
-        color: black;
-        font-weight: 500;
-    }
+
 
     .logo a {
         display: flex;
