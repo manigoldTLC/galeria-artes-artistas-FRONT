@@ -1,4 +1,4 @@
-import Card from '../components/Cards';
+import Card from '../../components/Cards';
 import { Container, ContainerCards } from './styled';
 
 const ArtistsPage = () => {

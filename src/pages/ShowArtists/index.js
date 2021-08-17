@@ -1,7 +1,8 @@
-import { Container} from './styles';
-import { LoremIpsum}from 'react-lorem-ipsum';
+import { Container } from './styles';
+import { LoremIpsum }from 'react-lorem-ipsum';
 import React from 'react';
 import img1 from '../../assets/images/rick.jpg';
+
 const ShowArtist = () => {
     return (
         <Container>
