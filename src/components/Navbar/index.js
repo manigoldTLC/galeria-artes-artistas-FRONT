@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState} from 'react';
 
 import Header from '../Header';
 import { Container } from './styles';
@@ -9,8 +9,11 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import {IconContext} from 'react-icons';
 import logo from '../../assets/images/logo.png'
+import { useUserContext } from '../contexts/useUserContext';
 
 export const Navbar = () => {
+
+    const {user} = useUserContext();
     const [sidebar, setSidebar] = useState(false);
         const showSidebar = () =>{ 
             
@@ -21,17 +24,18 @@ export const Navbar = () => {
 
             <div className='logo'>
                 <a href='/'>
-                    <img src={logo}></img>
+                    <img src={logo} alt='imagem'></img>
                 </a>
             </div>
             <div className='middle'>
-                <Link to='/paintings'>Pinturas</Link>
                 <Link to="/" className="li-nav">Home</Link>
+                <Link to='/paintings' className='li-nav'>Pinturas</Link>
                 <Link to="/artistas" className="li-nav">Artistas</Link>
-                <a className="li-nav" href='/'>Sobre Nós</a>
+                <Link className="li-nav" to='/'>Sobre Nós</Link>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
-                <Header/>
+                
+                <span>{user ? user.name : ''}</span>
                 <a href='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </a>
@@ -49,10 +53,10 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='/login'>
+                            <Header href='/login'>
                                 <IoIcons.IoMdPeople />
                                 <span>Login</span>
-                            </a>
+                            </Header>
                         </li>
                         <li className='nav-text'>
                             <a href='/pinturas'>
