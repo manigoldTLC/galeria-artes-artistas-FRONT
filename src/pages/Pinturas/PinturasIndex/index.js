@@ -3,7 +3,7 @@ import { api } from "../../../services/api"
 import { Container } from "./styles"
 import { Link } from "react-router-dom"
 
-const PaintingsIndex = () => {
+const PinturasIndex = () => {
 
     const [paintings, setPaintings] = useState([])
 
@@ -26,4 +26,4 @@ const PaintingsIndex = () => {
     )
 }
 
-export default PaintingsIndex
+export default PinturasIndex
