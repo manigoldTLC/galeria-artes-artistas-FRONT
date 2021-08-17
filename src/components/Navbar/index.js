@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect, useRef } from 'react';
 
+import Header from '../Header';
 import { Container } from './styles';
 import * as FaIcons from 'react-icons/fa';
 import * as FiIcons from 'react-icons/fi';
@@ -29,7 +30,7 @@ export const Navbar = () => {
                 <a className="li-nav" href='/'>Sobre Nós</a>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
-                <a href='/login'>login</a>
+                <Header/>
                 <a href='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </a>

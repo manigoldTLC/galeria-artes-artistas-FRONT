@@ -1,7 +1,7 @@
 import { ContainerFooter } from './styles';
 import img1 from '../../assets/images/sobreNos/manigold.jpg'
 import img2 from '../../assets/images/sobreNos/aang.jpg'
-import img3 from '../../assets/images/sobreNos/genshin.jpg'
+import img3 from '../../assets/images/sobreNos/shin-gojira.jpg'
 import img4 from '../../assets/images/sobreNos/wolverine.jpg'
 
 export const Footer = () => {

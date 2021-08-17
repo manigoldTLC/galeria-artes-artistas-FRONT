@@ -10,8 +10,8 @@ function App() {
     <div className="approute">
       <UserProvider>
         <GlobalStyle/>
-          <Navbar/>
           <Router>
+          <Navbar/>
             <MyRoutes/> 
           </Router>   
           <Footer/>
