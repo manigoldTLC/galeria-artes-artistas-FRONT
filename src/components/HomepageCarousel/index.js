@@ -8,7 +8,7 @@ import { StyleCarousel } from './styled'
 
 const HomepageCarousel = () => {
     return (
-    <StyleCarousel><Carousel pagination={false} enableAutoPlay={true} itemsToShow='3' showArrows={false}>
+    <StyleCarousel><Carousel pagination={false} enableAutoPlay={true} itemsToShow={3} showArrows={false}>
         <img src={img1}></img>
         <img src={img2}></img>
         <img src={img3}></img>
