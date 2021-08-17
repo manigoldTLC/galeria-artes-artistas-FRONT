@@ -2,6 +2,7 @@ import PaintingsCarousel from '../../components/PaintingsCarousel';
 import Title from '../../components/Title'
 import { FirstContainer } from './styled.js';
 
+
 const Pinturas = () =>  {
     return (
         <>
