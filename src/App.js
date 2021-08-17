@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="approute">
       <UserProvider>
-
         <GlobalStyle/>
           <Navbar/>
           <Router>

@@ -1,11 +1,13 @@
-import React, { useState} from 'react';
+import { Link } from 'react-router-dom'
+import React, { useState, useEffect, useRef } from 'react';
+
 import { Container } from './styles';
 import * as FaIcons from 'react-icons/fa';
 import * as FiIcons from 'react-icons/fi';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import {IconContext} from 'react-icons';
-import img1 from '../../assets/images/image-form1.png'
+import logo from '../../assets/images/logo.png'
 
 export const Navbar = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -18,13 +20,13 @@ export const Navbar = () => {
 
             <div className='logo'>
                 <a href='/'>
-                    <img src={img1}></img>
+                    <img src={logo}></img>
                 </a>
             </div>
             <div className='middle'>
-                <a href='/'>Home</a>
-                <a href='/'>Artistas</a>
-                <a href='/'>Sobre Nós</a>
+                <Link to="/" className="li-nav">Home</Link>
+                <Link to="/artistas" className="li-nav">Artistas</Link>
+                <a className="li-nav" href='/'>Sobre Nós</a>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
                 <a href='/login'>login</a>

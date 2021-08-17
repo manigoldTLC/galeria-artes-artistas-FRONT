@@ -9220,7 +9220,7 @@ react-lorem-ipsum@^1.4.9:
 
 react-only-when@^1.0.2:
   version "1.0.2"
-  resolved "https://registry.npmjs.org/react-only-when/-/react-only-when-1.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/react-only-when/-/react-only-when-1.0.2.tgz#a8a79b48dd6cfbd91ddc710674a94153e88039d3"
   integrity sha512-agE6l3L6bqaVuwNtjihTQ36M+VBfPS63KOzcNL4ZTmlwSxQPvhzIqmBWfiol0/wLYmKxCcBqgXkEJpvj5Kob8Q==
 
 react-refresh@^0.8.3:
