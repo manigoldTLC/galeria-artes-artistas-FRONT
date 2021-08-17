@@ -44,15 +44,15 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoIosPaper />
-                                <span>Categorias</span>
+                            <a href='/login'>
+                                <IoIcons.IoMdPeople />
+                                <span>Login</span>
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoMdPeople />
-                                <span>Publishers</span>
+                            <a href='/pinturas'>
+                                <IoIcons.IoIosPaper />
+                                <span>Pinturas</span>
                             </a>
                         </li>
                     </ul>
