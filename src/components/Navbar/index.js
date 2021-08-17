@@ -1,13 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom'
+import React, { useState} from 'react';
+
+import Header from '../Header';
 import { Container } from './styles';
 import * as FaIcons from 'react-icons/fa';
 import * as FiIcons from 'react-icons/fi';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import {IconContext} from 'react-icons';
-import img1 from '../../assets/images/image-form1.png'
+import logo from '../../assets/images/logo.png'
+import { useUserContext } from '../contexts/useUserContext';
 
 export const Navbar = () => {
+
+    const {user} = useUserContext();
     const [sidebar, setSidebar] = useState(false);
         const showSidebar = () =>{ 
             
@@ -18,15 +24,18 @@ export const Navbar = () => {
 
             <div className='logo'>
                 <a href='/'>
-                    <img src={img1}></img>
+                    <img src={logo} alt='imagem'></img>
                 </a>
             </div>
             <div className='middle'>
-                <a href='/'>Home</a>
-                <a href='/'>Artistas</a>
-                <a href='/'>Sobre Nós</a>
+                <Link to="/" className="li-nav">Home</Link>
+                <Link to='/paintings' className='li-nav'>Pinturas</Link>
+                <Link to="/artistas" className="li-nav">Artistas</Link>
+                <Link className="li-nav" to='/'>Sobre Nós</Link>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
+                
+                <span>{user ? user.name : ''}</span>
                 <a href='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showSidebar} />
                 </a>
@@ -44,15 +53,15 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoIosPaper />
-                                <span>Categorias</span>
-                            </a>
+                            <Header href='/login'>
+                                <IoIcons.IoMdPeople />
+                                <span>Login</span>
+                            </Header>
                         </li>
                         <li className='nav-text'>
-                            <a href='#'>
-                                <IoIcons.IoMdPeople />
-                                <span>Publishers</span>
+                            <a href='/pinturas'>
+                                <IoIcons.IoIosPaper />
+                                <span>Pinturas</span>
                             </a>
                         </li>
                     </ul>

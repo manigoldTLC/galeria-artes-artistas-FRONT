@@ -28,10 +28,24 @@ export const Container = styled.div`
             justify-content: center;
             padding-top: 25px;
 
-            span {
-                font-weight: bold;
-                font-size: 1.7rem;
+            a {
+                text-decoration: none;
+
+                span {
+                    font-weight: bold;
+                    font-size: 1.7rem;
+                    color: #808080;
+                }
+
+                span:hover {
+                    color: currentColor;
+                }
             }
+
+            a:hover {
+                text-decoration: underline currentColor;
+            }
+
         }
 
         .div-descricao-artista {

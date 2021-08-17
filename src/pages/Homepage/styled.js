@@ -31,7 +31,7 @@ export const SecondContainer = styled.section`
     };
 
     .content-wrapper {
-        max-width 40%;
+        max-width: 40%;
         margin-left: auto;
         text-align: right;
         border-left: 2px solid black;
