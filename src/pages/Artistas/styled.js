@@ -5,6 +5,12 @@ export const Container = styled.div`
     padding: 5rem;
     padding-top: 5rem;
 
+    p {
+        margin: 1.5rem 5px;
+        font-size: 1.2em;
+        color: #808080;
+    }
+
     @media (max-width: 411px) {
         padding: 15px;
         margin: 5rem 0;
