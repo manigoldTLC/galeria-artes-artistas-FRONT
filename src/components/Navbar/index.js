@@ -5,7 +5,7 @@ import * as FiIcons from 'react-icons/fi';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import {IconContext} from 'react-icons';
-import img1 from '../../assets/images/image-form1.png'
+import logo from '../../assets/images/logo.png'
 
 export const Navbar = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -18,7 +18,7 @@ export const Navbar = () => {
 
             <div className='logo'>
                 <a href='/'>
-                    <img src={img1}></img>
+                    <img src={logo}></img>
                 </a>
             </div>
             <div className='middle'>
