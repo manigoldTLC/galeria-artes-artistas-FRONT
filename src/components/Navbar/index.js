@@ -22,9 +22,9 @@ export const Navbar = () => {
                 </a>
             </div>
             <div className='middle'>
-                <a href='/'>Home</a>
-                <a href='/'>Artistas</a>
-                <a href='/'>Sobre Nós</a>
+                <a className="li-nav" href='/'>Home</a>
+                <a className="li-nav" href='/'>Artistas</a>
+                <a className="li-nav" href='/'>Sobre Nós</a>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
                 <a href='#' className='menu-bars'>
