@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="approute">
         <GlobalStyle/>  
-        <Navbar/>
       <Router>
+        <Navbar/>
         <MyRoutes/> 
       </Router>   
         <Footer/>

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Container } from './styles';
 import * as FaIcons from 'react-icons/fa';
@@ -22,8 +24,8 @@ export const Navbar = () => {
                 </a>
             </div>
             <div className='middle'>
-                <a className="li-nav" href='/'>Home</a>
-                <a className="li-nav" href='/'>Artistas</a>
+                <Link to="/" className="li-nav">Home</Link>
+                <Link to="/artistas" className="li-nav">Artistas</Link>
                 <a className="li-nav" href='/'>Sobre Nós</a>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>

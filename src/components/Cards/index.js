@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { Container } from './styled';
 import artista1 from '../../assets/images/image 2.png'
 
@@ -9,7 +11,9 @@ const Card = () => {
                     <img src={artista1} alt="Imagem do Artista"></img>
                 </div>
                 <div className="div-nome-artista">
-                    <span>Leonardo Da Vinci</span>
+                    <Link to="/artistas/artista">
+                        <span>Leonardo Da Vinci</span>
+                    </Link>
                 </div>
                 <div className="div-descricao-artista">
                     <p>
