@@ -61,6 +61,17 @@ export const ContainerFooter = styled.footer`
 
                 }
             }
+        
+            @media (max-width: 991px) {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                
+                .div-image-me {
+                    width: 100%;
+                }
+
+            }
 
 
        }
