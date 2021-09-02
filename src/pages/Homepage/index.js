@@ -1,5 +1,5 @@
 import { FirstContainer, SecondContainer, ThirdContainer} from './styled';
-import HomepageCarousel from '../../components/Carousel'
+import HomepageCarousel from '../../components/HomepageCarousel'
 import Title from '../../components/Title'
 import imgAnjos from '../../assets/images/anjos-homepage.png'
 import imgAbstract from '../../assets/images/abstract-homepage.jpg'

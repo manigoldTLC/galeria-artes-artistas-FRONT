@@ -44,7 +44,6 @@ const UserProvider = ({children}) => {
                 if (response){
                     console.log (response)
                     Cookies.remove('user')
-                    history.push('/')
                     history.go(0)
                 }
     

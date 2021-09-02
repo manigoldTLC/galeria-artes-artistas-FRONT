@@ -3,7 +3,6 @@ import imgRegister from '../../assets/images/image-form1.png';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import icon1 from '../../assets/images/icon1.png'
-import { useState } from 'react';
 
 const PaginaCadastro = () => {
 
