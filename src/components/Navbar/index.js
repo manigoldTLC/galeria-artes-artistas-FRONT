@@ -29,9 +29,9 @@ export const Navbar = () => {
             </div>
             <div className='middle'>
                 <Link to="/" className="li-nav">Home</Link>
-                <Link to='/paintings' className='li-nav'>Pinturas</Link>
+                <Link to='/pinturas' className='li-nav'>Pinturas</Link>
                 <Link to="/artistas" className="li-nav">Artistas</Link>
-                <Link className="li-nav" to='/'>Sobre Nós</Link>
+                <a href="#about-us" className="li-nav">Sobre Nós</a>
             </div>
             <IconContext.Provider value={{ color: '#000', size:'30px' }}>
                 

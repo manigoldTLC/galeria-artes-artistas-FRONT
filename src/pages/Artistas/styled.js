@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 100vw;
+  
     padding: 5rem;
     padding-top: 5rem;
 
@@ -11,15 +12,19 @@ export const Container = styled.div`
         color: #808080;
     }
 
-    @media (max-width: 411px) {
+    @media (max-width: 492px) {
         padding: 15px;
         margin: 5rem 0;
     }
 `;
 
 export const ContainerCards = styled.div`
-    padding: 3.5rem 0;
+    margin: 40px auto;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    padding: 2rem 20px;
 `;

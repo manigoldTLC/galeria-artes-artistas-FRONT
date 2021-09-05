@@ -11,7 +11,7 @@ function App() {
       <UserProvider>
         <GlobalStyle/>
           <Router>
-          <Navbar/>
+            <Navbar/>
             <MyRoutes/> 
           </Router>   
           <Footer/>

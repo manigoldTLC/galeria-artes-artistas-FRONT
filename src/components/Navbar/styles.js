@@ -21,6 +21,7 @@ export const Container = styled.nav`
         display: flex;
         justify-content: space-around;
         gap: 3rem;
+        margin: auto;
 
 
         .li-nav {

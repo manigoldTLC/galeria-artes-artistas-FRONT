@@ -1,70 +1,55 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    .div-card {
-        background-color: #fff;
-        border-radius: 10px;
-        border: 0.1px solid #fff;
-        box-shadow: -1px 10px 20px #E0E0E0, -1px 10px 20px #E0E0E0;
-        display: flex;
-        flex-direction: column;
-        transition: 0.3s;
-        
-        .div-imagem-artista{
-            padding: 10px 0;
-            height: 24rem;
+    background-color: white;
+    padding: 15px 15px 4px;
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
 
-            img {
-                width: 100%;
-                height: 24rem;
-                object-fit: cover;
-                object-position: center;
-                padding: 0 10px;
-            }
-        }
-
-        .div-nome-artista {
-            display: flex;
-            justify-content: center;
-            padding-top: 25px;
-
-            a {
-                text-decoration: none;
-
-                span {
-                    font-weight: bold;
-                    font-size: 1.7rem;
-                    color: #808080;
-                }
-
-                span:hover {
-                    color: currentColor;
-                }
-            }
-
-            a:hover {
-                text-decoration: underline currentColor;
-            }
-
-        }
-
-        .div-descricao-artista {
-            padding: 5px 10px;
-
-            p {
-                line-height: 1.3;
-                color: #808080;
-                margin-bottom: 10px;
-                font-size: 18px;
-                text-align: center;
-            }
-        }
-
-        :hover {
-            cursor: pointer;
-            transform: translateY(-3px);
-        }
-
+    img {
+        width: 100%;
+        height: 18.5rem;
+        object-fit: cover;
     }
 
+    .caption {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            border-bottom: 1px solid #c2c2c2;
+            padding: 10px 0;
+            span {
+                font-size: 1.5em;
+                color: #020202;
+                font-weight: bold;
+            }
+        }
+
+        a:hover {
+            border-bottom: 1px solid currentColor;
+
+            span {
+                color: currentColor;
+            }
+        }
+
+        p {
+            text-align: justify;
+            font-weight: 700;
+            font-size: 1.3em;
+        }
+        
+
+    }
+`;
+
+export const LoadTitle = styled.div `
+    display: flex;
+    margin-top: 25vh;
+    justify-content: center;
+    align-items: center;
 `;

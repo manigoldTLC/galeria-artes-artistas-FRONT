@@ -7,7 +7,7 @@ import img4 from '../../assets/images/sobreNos/wolverine.jpg'
 export const Footer = () => {
     return (
         <ContainerFooter>
-            <div className="footer-content">
+            <div id="about-us" className="footer-content">
                 <h3>Sobre nós</h3>
                 <div className="div-images-us">
                     <div className="div-image-me">
