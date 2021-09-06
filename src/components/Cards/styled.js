@@ -43,6 +43,11 @@ export const Container = styled.div`
             font-size: 1.3em;
         }
         
+        .div-options-artist {
+            display: flex;
+            gap: 10px;
+            font-size: 0.8em;
+        }
 
     }
 `;

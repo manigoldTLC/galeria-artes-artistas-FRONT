@@ -12,6 +12,19 @@ export const Container = styled.div`
         color: #808080;
     }
 
+    .div-btn-add-artist {
+        width: fit-content;
+
+        .link-add-artist {
+            text-decoration: none;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1em;
+        }
+    }
+
     @media (max-width: 492px) {
         padding: 15px;
         margin: 5rem 0;
